@@ -8,8 +8,10 @@
 
 import UIKit
 
+/// A basic UITableViewController
 class TableViewController: UITableViewController {
     
+    /// The list of items to display
     var items = ["item 1", "item 2", "item 3"]
 
     override func viewDidLoad() {
@@ -29,15 +31,31 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
+    /// Gets the number of sections in the tableView
+    ///
+    /// - Parameter tableView: tableView to get number of sections for; ignored
+    /// - Returns: 1
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
+    /// Get the count of items to show in the tableViewSection
+    ///
+    /// - Parameters:
+    ///   - tableView: which tableView to use; ignored
+    ///   - section: which section to use; ignored
+    /// - Returns: the number of items to be displayed
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
 
     
+    /// Gets a cell to show
+    ///
+    /// - Parameters:
+    ///   - tableView: which tableView to use; ignored
+    ///   - indexPath: index of the item to get
+    /// - Returns: the item at the given index
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! TableViewCell
 

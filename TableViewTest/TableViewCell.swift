@@ -10,6 +10,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
 
+    /// The label to display on the cell
     @IBOutlet weak var cellLabel: UILabel!
     
     override func awakeFromNib() {
