@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -42,6 +43,10 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="cellLabel" destination="xjT-c0-4EI" id="LZk-bF-UHa"/>
+                                    <segue destination="3xj-M6-WTn" kind="show" id="Ezq-f2-XCQ">
+                                        <segue key="commit" inheritsFrom="parent" id="15l-eM-Qa3"/>
+                                        <segue key="preview" inheritsFrom="commit" id="Q1u-Tj-SXq"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -55,6 +60,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eg6-fZ-Ujj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1512.8" y="139.880059970015"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="fCR-Mo-aSh">
+            <objects>
+                <viewController id="3xj-M6-WTn" customClass="DetailViewController" customModule="TableViewTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="H5i-xT-k81"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ye7-S9-CQc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HOf-c7-Lhf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xl-eP-btR">
+                                <rect key="frame" x="16" y="72" width="343" height="34"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7xl-eP-btR" firstAttribute="centerX" secondItem="HOf-c7-Lhf" secondAttribute="centerX" id="1n9-E3-Fnc"/>
+                            <constraint firstItem="7xl-eP-btR" firstAttribute="top" secondItem="H5i-xT-k81" secondAttribute="bottom" constant="8" id="Ahz-7k-bFJ"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="7xl-eP-btR" secondAttribute="leading" id="vBX-v3-JT4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="7xl-eP-btR" id="DJ6-5z-9ZG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lwp-Lp-vcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2280.8000000000002" y="139.880059970015"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1ng-2C-ice">
@@ -75,4 +114,7 @@
             <point key="canvasLocation" x="573.60000000000002" y="140.77961019490255"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ezq-f2-XCQ"/>
+    </inferredMetricsTieBreakers>
 </document>

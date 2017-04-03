@@ -13,6 +13,7 @@
 		2DF78C9C1E92C63E003411C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DF78C9A1E92C63E003411C2 /* LaunchScreen.storyboard */; };
 		2DF78CA51E92C6FE003411C2 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF78CA41E92C6FE003411C2 /* TableViewController.swift */; };
 		2DF78CA71E92C9EC003411C2 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF78CA61E92C9EC003411C2 /* TableViewCell.swift */; };
+		2DF78CA91E92CEB7003411C2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF78CA81E92CEB7003411C2 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2DF78C9D1E92C63E003411C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2DF78CA41E92C6FE003411C2 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2DF78CA61E92C9EC003411C2 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		2DF78CA81E92CEB7003411C2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				2DF78CA41E92C6FE003411C2 /* TableViewController.swift */,
 				2DF78CA61E92C9EC003411C2 /* TableViewCell.swift */,
 				2DF78C951E92C63E003411C2 /* Main.storyboard */,
+				2DF78CA81E92CEB7003411C2 /* DetailViewController.swift */,
 			);
 			path = TableViewTest;
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 				2DF78CA71E92C9EC003411C2 /* TableViewCell.swift in Sources */,
 				2DF78C921E92C63E003411C2 /* AppDelegate.swift in Sources */,
 				2DF78CA51E92C6FE003411C2 /* TableViewController.swift in Sources */,
+				2DF78CA91E92CEB7003411C2 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

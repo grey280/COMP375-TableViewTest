@@ -102,14 +102,31 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+    /// Prepare for segue; assumes it's the one being called by a cell in the table
+    ///
+    /// - Parameters:
+    ///   - segue: segue
+    ///   - sender: the sender
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        print("prepare for segue")
+        guard let sendingCell = sender as? TableViewCell else {
+            // do nothing
+            return
+        }
+        guard let destinationView = segue.destination as? DetailViewController else {
+            // something went wrong
+            return
+        }
+        print(destinationView.titleLabel?.text)
+        print(sendingCell.cellLabel?.text!)
+        destinationView.titleLabel?.text = sendingCell.cellLabel?.text
     }
-    */
+ 
 
 }
