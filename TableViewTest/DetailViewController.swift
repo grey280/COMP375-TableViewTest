@@ -8,9 +8,10 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+/// Displays details of a tapped TableViewCell
+public class DetailViewController: UIViewController {
     /// Temporarily used to store the title
-    var titleLabelText: String?
+    public var titleLabelText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()

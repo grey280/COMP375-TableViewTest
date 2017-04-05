@@ -8,10 +8,11 @@
 
 import UIKit
 
+/// A cell for the table view
 class TableViewCell: UITableViewCell {
 
     /// The label to display on the cell
-    @IBOutlet weak var cellLabel: UILabel!
+    @IBOutlet public weak var cellLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
