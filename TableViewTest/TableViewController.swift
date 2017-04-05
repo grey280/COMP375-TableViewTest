@@ -115,15 +115,12 @@ class TableViewController: UITableViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         print("prepare for segue")
-        guard let sendingCell = sender as? TableViewCell else {
-            // something went wrong; the sender wasn't a TableViewCell
-            return
-        }
         guard let destinationView = segue.destination as? DetailViewController else {
             // something went wrong; the destination wasn't a DetailViewController
             return
         }
-        destinationView.titleLabelText = sendingCell.cellLabel!.text!
+        let sendingCellLabel = (sender as! UITableViewCell).textLabel?.text ?? "item -1"
+        destinationView.titleLabelText = sendingCellLabel
     }
  
 
