@@ -11,7 +11,7 @@ import UIKit
 /// Displays details of a tapped TableViewCell
 class DetailViewController: UIViewController {
     /// Temporarily used to store the title
-    public var titleLabelText: String?
+    var titleLabelText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
