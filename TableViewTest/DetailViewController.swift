@@ -9,7 +9,7 @@
 import UIKit
 
 /// Displays details of a tapped TableViewCell
-public class DetailViewController: UIViewController {
+class DetailViewController: UIViewController {
     /// Temporarily used to store the title
     public var titleLabelText: String?
     
