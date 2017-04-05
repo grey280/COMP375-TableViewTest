@@ -9,16 +9,13 @@
 import UIKit
 
 class DetailViewController: UIViewController {
-
-    /// The title label - main thing being displayed
-    @IBOutlet weak var titleLabel: UILabel!
     /// Temporarily used to store the title
     var titleLabelText: String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         if let tLT = titleLabelText{
-            titleLabel.text = tLT
+            title = tLT
         }
 
         // Do any additional setup after loading the view.

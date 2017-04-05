@@ -72,24 +72,8 @@
                     <view key="view" contentMode="scaleToFill" id="HOf-c7-Lhf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xl-eP-btR">
-                                <rect key="frame" x="16" y="72" width="343" height="34"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="7xl-eP-btR" firstAttribute="centerX" secondItem="HOf-c7-Lhf" secondAttribute="centerX" id="1n9-E3-Fnc"/>
-                            <constraint firstItem="7xl-eP-btR" firstAttribute="top" secondItem="H5i-xT-k81" secondAttribute="bottom" constant="8" id="Ahz-7k-bFJ"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="7xl-eP-btR" secondAttribute="leading" id="vBX-v3-JT4"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="titleLabel" destination="7xl-eP-btR" id="DJ6-5z-9ZG"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lwp-Lp-vcl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
