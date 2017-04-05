@@ -123,9 +123,7 @@ class TableViewController: UITableViewController {
             // something went wrong
             return
         }
-        print(destinationView.titleLabel?.text)
-        print(sendingCell.cellLabel?.text!)
-        destinationView.titleLabel?.text = sendingCell.cellLabel?.text
+        destinationView.titleLabelText = sendingCell.cellLabel!.text!
     }
  
 
