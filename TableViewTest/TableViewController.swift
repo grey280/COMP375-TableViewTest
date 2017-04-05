@@ -114,12 +114,11 @@ class TableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        print("prepare for segue")
         guard let destinationView = segue.destination as? DetailViewController else {
             // something went wrong; the destination wasn't a DetailViewController
             return
         }
-        let sendingCellLabel = (sender as! UITableViewCell).textLabel?.text ?? "item -1"
+        let sendingCellLabel = (sender as! TableViewCell).cellLabel?.text ?? "item -1"
         destinationView.titleLabelText = sendingCellLabel
     }
  
